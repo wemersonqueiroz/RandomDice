@@ -1,44 +1,44 @@
 
- let rand = Math.floor(Math.random() * 6 +1)
+ let randomNumber1= Math.floor(Math.random() * 6 +1)
 
- if (rand ==1) {
+ if (randomNumber1==1) {
   document.querySelector("#dice1").setAttribute("src", "./images/dice1.png")
- } else if (rand ==2){
+ } else if (randomNumber1==2){
   document.querySelector("#dice1").setAttribute("src", "./images/dice2.png")
- } else if (rand ==3){
+ } else if (randomNumber1==3){
   document.querySelector("#dice1").setAttribute("src", "./images/dice3.png")
- } else if (rand ==4){
+ } else if (randomNumber1==4){
   document.querySelector("#dice1").setAttribute("src", "./images/dice4.png")
- } else if (rand ==5){
+ } else if (randomNumber1==5){
   document.querySelector("#dice1").setAttribute("src", "./images/dice5.png")
  } else {
   document.querySelector("#dice1").setAttribute("src", "./images/dice6.png")
  }
 
- let rand2 = Math.floor(Math.random() * 6 +1)
+ let randomNumber2 = Math.floor(Math.random() * 6 +1)
 
 
- if (rand2 ==1) {
+ if (randomNumber2 ==1) {
   document.querySelector("#dice2").setAttribute("src", "./images/dice1.png")
- } else if (rand2 ==2){
+ } else if (randomNumber2 ==2){
   document.querySelector("#dice2").setAttribute("src", "./images/dice2.png")
- } else if (rand2 ==3){
+ } else if (randomNumber2 ==3){
   document.querySelector("#dice2").setAttribute("src", "./images/dice3.png")
- } else if (rand2 ==4){
+ } else if (randomNumber2 ==4){
   document.querySelector("#dice2").setAttribute("src", "./images/dice4.png")
- } else if (rand2 ==5){
+ } else if (randomNumber2 ==5){
   document.querySelector("#dice2").setAttribute("src", "./images/dice5.png")
  } else {
   document.querySelector("#dice2").setAttribute("src", "./images/dice6.png")
  }
  
-if (rand == rand2) {
-document.querySelector(".title").innerHTML = "Draw Game!"
+if (randomNumber1== randomNumber2) {
+document.querySelector(".title").innerHTML = "Draw Game! 😕"
 console.log("draw game")
-} else if (rand < rand2) {
-  document.querySelector(".title").innerHTML = 'Player 2 Wins! <img id="trophy" src="./images/winner.png">'
+} else if (randomNumber1< randomNumber2) {
+  document.querySelector(".title").innerHTML = 'Player 2 Wins! 🏆'
     console.log("player 2 wins")
 } else {
-  document.querySelector(".title").innerHTML = '<img id="trophy" src="./images/winner.png"> Player 1 Wins!'
+  document.querySelector(".title").innerHTML = '🏆 Player 1 Wins!'
 }
  
